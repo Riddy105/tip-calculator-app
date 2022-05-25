@@ -101,6 +101,9 @@ button:focus {
   background-color: var(--Strong-cyan);
   color: var(--Very-dark-cyan);
 }
+button:focus-visible {
+  outline: none;
+}
 .display-cont {
   display: flex;
   justify-content: space-between;
