@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/media.css" />
+    <script src="script.js" defer></script>
+    <title>Riddy Tip Calculator App</title>
+  </head>
+  <body>
+    <div class="splitter">
+      <p>SPLI</p>
+      <p>TTER</p>
+    </div>
+    <div class="container">
+      <div class="col-1">
+        <label for="bill">Bill</label>
+        <input
+          type="number"
+          id="bill"
+          name="bill"
+          class="bill-input"
+          placeholder="0"
+        />
+        <p>Select tip %</p>
+        <div class="tip-btns">
+          <button class="tip-btn">5%</button>
+          <button class="tip-btn">10%</button>
+          <button class="tip-btn">15%</button>
+          <button class="tip-btn">25%</button>
+          <button class="tip-btn">50%</button>
+          <input type="number" class="custom-input" placeholder="Custom" />
+        </div>
+        <div class="display-cont">
+          <label for="people">Number of People</label>
+          <p class="display-cont-para">Can't be zero</p>
+        </div>
+        <input
+          type="number"
+          id="people"
+          name="people"
+          class="people-input"
+          placeholder="0"
+        />
+      </div>
+      <div class="col-2">
+        <div class="tip-row">
+          <div class="tip">
+            <h2>Tip Amount</h2>
+            <p>/ person</p>
+          </div>
+          <h2>$<span class="tip-value">0.00 </span></h2>
+        </div>
+        <div class="total-row">
+          <div class="total">
+            <h2>Total</h2>
+            <p>/ person</p>
+          </div>
+          <h2>$<span class="total-value">0.00</span></h2>
+        </div>
+        <button class="reset">RESET</button>
+      </div>
+    </div>
+  </body>
+</html>

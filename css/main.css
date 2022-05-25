@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --Strong-cyan: hsl(172, 67%, 45%);
+  --Very-dark-cyan: hsl(183, 100%, 15%);
+  --Dark-grayish-cyan: hsl(186, 14%, 43%);
+  --Grayish-cyan: hsl(184, 14%, 56%);
+  --Light--grayish--cyan: hsl(185, 41%, 84%);
+  --Very--light--grayish-cyan: hsl(189, 41%, 97%);
+  --White: hsl(0, 0%, 100%);
+}
+html {
+  font-size: 10px;
+}
+body {
+  height: 100vh;
+  font-size: 2.4rem;
+  font-family: "Space Mono", monospace;
+  background-color: var(--Light--grayish--cyan);
+  display: flex;
+  gap: 3rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container label,
+.container p {
+  font-size: 1.6rem;
+}
+.container {
+  width: 75%;
+  background-color: var(--White);
+  border-radius: 2rem;
+  padding: 2rem 3rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 4rem;
+}
+col-1 label,
+col-1 p {
+  color: var(--Very-dark-cyan);
+}
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+  appearance: none;
+}
+input {
+  display: block;
+  text-align: end;
+  width: 100%;
+  padding: 0.8rem 1rem;
+  font-size: 2.4rem;
+  background-color: var(--Very--light--grayish-cyan);
+  border: none;
+}
+input:focus-visible {
+  outline: var(--Strong-cyan) solid 3px;
+}
+input::placeholder {
+  font-family: "Space Mono", monospace;
+}
+input[name="bill"] {
+  background-image: url("/images/icon-dollar.svg");
+  background-repeat: no-repeat;
+  background-position: 2% 50%;
+  margin-bottom: 4rem;
+}
+input[name="people"] {
+  background-image: url("/images/icon-person.svg");
+  background-repeat: no-repeat;
+  background-position: 2% 50%;
+}
+.tip-btns {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 2rem;
+  row-gap: 2rem;
+  margin-bottom: 4rem;
+}
+.tip-btns input {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+button {
+  font-family: inherit;
+  font-size: 2.4rem;
+  color: var(--White);
+  background-color: var(--Very-dark-cyan);
+  border: none;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  cursor: pointer;
+}
+button:focus {
+  background-color: var(--Strong-cyan);
+  color: var(--Very-dark-cyan);
+}
+.display-cont {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+.display-cont-para {
+  color: #ff0000;
+  display: none;
+}
+.display {
+  display: block;
+}
+.col-2 {
+  background-color: var(--Very-dark-cyan);
+  border-radius: 1rem;
+  padding: 3rem 2rem 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+.total-row,
+.tip-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.total-row h2:nth-child(2),
+.tip-row h2:nth-child(2) {
+  color: var(--Strong-cyan);
+  font-size: 4rem;
+}
+.tip h2,
+.total h2 {
+  color: var(--Very--light--grayish-cyan);
+  font-size: 2rem;
+}
+.tip p,
+.total p {
+  color: var(--Grayish-cyan);
+}
+.reset {
+  margin-top: auto;
+  background-color: var(--Strong-cyan);
+  color: var(--Very-dark-cyan);
+  opacity: 0.3;
+}
+
+.reset:hover,
+.reset:active {
+  opacity: 1;
+}
