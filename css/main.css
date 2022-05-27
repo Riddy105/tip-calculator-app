@@ -97,7 +97,8 @@ button {
   padding: 1rem;
   cursor: pointer;
 }
-button:focus {
+button:focus,
+button:active {
   background-color: var(--Strong-cyan);
   color: var(--Very-dark-cyan);
 }
