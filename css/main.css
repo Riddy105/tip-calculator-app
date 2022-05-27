@@ -98,7 +98,8 @@ button {
   cursor: pointer;
 }
 button:focus,
-button:active {
+button:active,
+button:hover {
   background-color: var(--Strong-cyan);
   color: var(--Very-dark-cyan);
 }
@@ -155,4 +156,13 @@ button:focus-visible {
 .reset:hover,
 .reset:active {
   opacity: 1;
+}
+
+/* ATTRIBUTION */
+.attribution {
+  font-size: 2rem;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
